@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="page.css">
+</head>
+<body>
+
+
+<div class= "bannerHead">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="googleImage">
+	<p class="header"><span style="font-size:40px; color:white; text-transform:uppercase; ">w</span>eb <span style="font-size: 40px;text-transform:uppercase; color: #e60000;">s</span>earch <span style="font-size: 40px; text-transform:uppercase; color: #e68a00;">e</span>ngine</p>
+
+	<script>
+  (function() {
+    var cx = '000277674931680419685:lkcoi0pp6ia';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+<div class="listDiv">
+	
+<ul class="MenuList">
+	<li><a href="index.html">Introduction</a></li>
+	<li><a href="SystemFeatures.html">System Features</a></li>
+
+	<li><a href="aboutMe.html">About Me</a></li>
+</ul>
+
+
+</div>
+
+<div class="contentDiv">
+
+	<p style="font-family: arial; text-align: center; font-weight: bold; padding-top: 15px;">Introduction</p>
+
+	<div style="float: right; margin: 12px;"><img src="google_archi.jpg"/></div>
+	<blockquote>
+
+		<b>Google Architecture overview</b><br><br>
+
+		In Google, the web crawling(downloading of web pages) is done by several distributed crawlers.
+		There is a URLserver that sends lists of URLs to be fetched to the crawlers. The web pages that are then sent to the storeserver. The storeserver then compresses and stores the web pages into a repository.<br>Every web page has as associated ID number called a docID which is assigned whenever a new URL is parsed out of a web page. <br><br>The indexing function is performed by the indexer and the sorter. The indexer performs a number of functions. It reads the repository, uncompresses the documents and parses them. Each document is converted into a set of word occurrence called hits. The hits record the word, position in document, an approximation of font size, and capitalization.<br>The indexer distributes these hits into a set of “barrels”, creating a partially sorted forward index. The indexer performs another important function. It parses out all the links in every web page and stores important information about then in anchors file. This file contains enough information to determine where each link points from and to, and the text of the link.<br><br>
+		The URLresolver reads the anchors file and converts relative URLs into absolute URLS and in turn into docIDs. It puts the anchor text into the forward index, associated with the docID that the anchor points to. It also generates a database of links which are pairs of docIDs. The links database used to compute PageRanks for all the documents.
+		The sorter takes the barrels, which are sorted by docID and resorts them by wordID to generate the inverted index. This is done in place so that little temporary space is needed for this operation. The sorter also produces a list of wordIDs and offsets into the inverted index. A program called DumpLexicon takes this list together with the lexicon produced by the searcher is run by a web server and uses the lexicon built by DumpLexicon together with the inverted index and the PageRanks to answer queries. 
+
+
+	</blockquote>
+
+
+
+<p style="position: absolute; bottom: 36px; left: 240px;"><a href = "index.html" style="font-size:14px; color:blue;"> << browse back</a></p>
+</div>
+
+<!--<a href="#" class="imagehover">image<img src="larry_page.jpg"/></a>-->
+<div class="bannerFooter">
+	<p class="footerText">karmadorji &copy; copyright</p>
+</div>
+
+</body>
+</html>

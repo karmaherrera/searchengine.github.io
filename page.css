@@ -1,0 +1,131 @@
+html
+{
+	margin:0;
+	background-image: url(background_image.jpg);
+
+}
+
+html, body
+{
+	margin: 0;
+	padding:0;
+}
+.googleImage
+{
+	width: 150px;
+	height:50px;
+	margin-top:2%;
+	margin-left: 8%; 
+}
+.bannerHead
+{
+
+	background:  #264d73;
+	height: 100px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.header
+{
+	color: #bfbfbf;
+	font-family: arial;
+	font-size: 21px;
+	text-align: center;
+	margin-top: -60px;
+	letter-spacing: 3px;
+
+}
+
+.contentDiv
+{
+	height: 450px;
+	background-color:  #b3ffe6;
+	width:1100px;
+	margin-left: 15%;
+	margin-top: 3%;
+	font-family: arial;
+	font-size: 14px;
+	box-shadow: 10px 10px 5px #aaaaaa ;
+
+}
+
+.bannerFooter
+{
+
+	background: #404040;
+	height: 30px;
+	margin-top:2%;
+
+}
+ul
+{
+	list-style: none;
+	position: relative;
+	float: left;
+	padding-left: 1px;
+	margin: 0;
+	font-family: arial;
+	font-weight: bold;
+	
+}
+ul li:hover
+{
+	background: #99ccff;
+	font-color: black;
+}
+ul li
+{
+	padding:10px;
+}
+
+ul li a
+{
+	
+	color: black;
+}
+
+
+.MenuList
+{
+
+	margin-top:100px;
+	margin-left: 70px;
+}
+
+.MenuList a
+{
+	text-decoration: none;
+}
+
+a:focus
+{
+	color:blue;
+	background: #99ccff;
+}
+
+.footerText
+{
+
+	padding:10px;
+	text-align: center;
+	color: white;
+	font-size: 11px;
+	font-family: arial;
+}
+
+.imagehover img
+{
+	display: none;
+
+}
+.imagehover:hover img
+{
+	display:block;
+	width:180px;
+	height: 180px; 
+	z-index: 1;
+	position: absolute;
+	right:200px;
+	border-radius: 10px;
+}
